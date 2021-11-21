@@ -1,40 +1,16 @@
 import React, { Component } from 'react';
 import MenuItem from '../menu-item/menu-item';
 import './directory.scss';
+import sections from './dir-props'
 import { uuid } from 'uuid';
 
 class Directory extends Component {  
-    constructor(props){
-        super(props);
-        this.state={
-            sections:[
-            {
-                title: "HATS",
-                imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-                id: 1
-            },
-            {
-                title: "HATS",
-                imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-                id: 1
-            },
-            {
-                title: "HATS",
-                imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-                id: 1
-            },
-            {
-                title: "HATS",
-                imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-                id: 1
-            },
-            {
-                title: "HATS",
-                imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-                id: 1
-            }]
-        }
+    // Setting state like this is preferred over setting state from the constructor. Less redundancy
+    // the constructor is only called once, so changes in props won't be reflected in this component.
+    state={
+        sections: [sections]
     }
+    
     render() {
         return (
             <div className="directory-menu">
