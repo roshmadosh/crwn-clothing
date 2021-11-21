@@ -9,22 +9,22 @@ export default () => ([
     {
         title: "JACKETS",
         imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-        id: 1
+        id: 2
     },
     {
         title: "SNEAKERS",
         imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-        id: 1
+        id: 3
     },
     {
         title: "WOMENS",
         imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
-        id: 1
+        id: 4
     },
     {
         title: "MENS",
-        imageUrl: 'https://i.ibb.co/R7-vBrQ/mens.png',
-        id: 1
+        imageUrl: 'https://i.ibb.co/R70vBrQ/mens.png',
+        id: 5
     }]
 
 )
